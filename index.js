@@ -1,4 +1,3 @@
-const RoboCar = ['./image/blue.png', './image/white.png', './image/black.png'];
 const CarAdjustment = [0,20, 50, 30, 60,80];
 const SetTiming = [500,1000,2000,3000, 4000];
 const stater_page  = document.getElementById('stater_page')
@@ -87,7 +86,7 @@ const GameFunctions = {
             let RandomImage = Math.floor((Math.random() * (3)));
             let RandomPosition = Math.floor(Math.random() * (6));
             RoboCarDiv.style.width = 15 + '%'
-            RoboCarImg.setAttribute('src', RoboCar[RandomImage]);
+            RoboCarImg.setAttribute('src', './image/white.png');
             RoboCarImg.style.width = 100 + '%';
             RoboCarImg.style.height = 100 + '%';
             RoboCarImg.style.objectFit = 'cover';
